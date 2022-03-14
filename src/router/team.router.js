@@ -19,7 +19,7 @@ router.patch("/editteam", authenticate, authorize, updateTeam);
 //route to view all teams registered
 router.get("/viewteams", authenticate, viewTeamsDetails);
 
-router.get("/viewteamlists", registeredTeamList);
+router.get("/viewteamlist", registeredTeamList);
 
 //route to delete team
 router.delete("/deleteteam", authenticate, authorize, delTeam);
